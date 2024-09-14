@@ -1,0 +1,39 @@
+.caseNumberContainer {
+  position: absolute;
+  transition: var(--transition);
+  font-size: 2em;
+  height: 7.5%;
+  z-index: 5;
+}
+.caseCloseButton {
+  position: absolute;
+  top: 5%;
+  right: -3.5vw;
+  margin: auto;
+  background-color: rgb(216, 216, 236);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 2.5vw;
+  height: 2.5vw;
+  padding: 5px;
+  font-size: 0.75em;
+  color: var(--primary-dark);
+  cursor: pointer;
+}
+.caseNumberContainer input {
+  position: absolute;
+  background: rgb(216, 216, 236);
+  font-size: 1em;
+  border-color: transparent;
+  border-radius: var(--rounded-borders);
+  outline: none;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.caseNumberContainer input:focus {
+  background: rgb(216, 216, 236);
+  border: none;
+  box-shadow: none;
+}

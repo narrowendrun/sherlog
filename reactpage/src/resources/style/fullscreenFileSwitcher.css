@@ -1,0 +1,54 @@
+.fullscreenFileSwitcher {
+  position: absolute;
+  height: 90%;
+  width: 100%;
+  left: 0;
+  top: 5%;
+  overflow: scroll;
+}
+.caseNumber_FFS p {
+  width: 100%;
+  border-radius: var(--rounded-borders);
+}
+
+.caseNumber_FFS,
+.serialNumber_FFS,
+.filename_FFS {
+  display: flex;
+  padding: 1%;
+  padding-top: 2.5%;
+  padding-bottom: 0%;
+}
+.serialNumber_FFS {
+  padding-left: 7%;
+}
+.filename_FFS {
+  display: flex;
+  align-items: center;
+  padding: 0%;
+  padding-left: 14%;
+  margin: 0;
+}
+
+.filename_FFS p {
+  width: 90%;
+  height: 27.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  border-radius: var(--rounded-borders);
+  border: 1px solid transparent;
+  padding: 2%;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.filename_FFS p:hover {
+  border-color: var(--primary-dark);
+}
+.filename_FFS p:active {
+  transform: scale(0.75);
+}
+.fullscreenFSB {
+  font-size: 25px;
+}

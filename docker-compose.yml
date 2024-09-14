@@ -1,0 +1,23 @@
+services:
+  backend:
+    build:
+      context: ./flaskserver
+      args:
+        GIT_PAT: ${GIT_PAT}
+    environment:
+      GIT_PAT: ${GIT_PAT}
+      BEARER_TOKEN: ${BEARER_TOKEN}
+      BASE_URL: ${BASE_URL}
+    container_name: sherlog-backend
+    ports:
+      - "5001:5000"
+    volumes:
+    - ./tech-support:/app/tech-support
+    - ./logs:/app/logs
+  frontend:
+    build: ./reactpage
+    container_name: sherlog-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend

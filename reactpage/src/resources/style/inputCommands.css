@@ -1,0 +1,46 @@
+#inputContainer {
+  position: fixed;
+  height: 40%;
+  width: 80%;
+  bottom: -4vh;
+  left: 10%;
+  padding: 1% 5%;
+  margin-top: 1%;
+  background-color: var(--input-bg-light); /*897869*/
+  color: var(--input-bg-dark);
+  box-shadow: var(--box-shadow-input);
+  border-radius: var(--rounded-borders);
+  border: 1px solid var(--secondary-light);
+  transition: var(--transition-main);
+  overflow: auto;
+  z-index: 11;
+}
+.scroller {
+  color: var(--input-bg-dark);
+  position: absolute;
+  left: 7.5%;
+  width: 90%;
+  height: 70%;
+  overflow: auto;
+  top: 10%;
+  font-size: 1em;
+}
+.scroller p {
+  cursor: pointer;
+  transition: var(--transitions);
+}
+.scroller p:hover {
+  color: var(--secondary-light);
+  font-size: 1.2em;
+}
+#command {
+  background-color: var(--input-bg-light);
+  border: none;
+  position: fixed;
+  left: 15%;
+  width: 70%;
+  bottom: 5%;
+  z-index: 12;
+  color: var(--secondary-light);
+  box-shadow: var(--box-shadow-output);
+}

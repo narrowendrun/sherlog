@@ -1,0 +1,75 @@
+.FileTreeWrapper {
+  position: absolute;
+  transition: var(--transition);
+}
+.FileTree {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background-color: rgb(216, 216, 236);
+  padding: 5%;
+  border-radius: var(--rounded-borders);
+}
+.FileTreeButton {
+  position: absolute;
+  width: 20%;
+  height: 5%;
+  left: 40%;
+  bottom: -10%;
+  background-color: rgb(216, 216, 236);
+  border: none;
+  outline: none;
+  border-radius: var(--rounded-borders);
+  transition: var(--transition);
+}
+.deviceContainer {
+  margin-bottom: 2%;
+  background-color: var(--primary-dark);
+  padding: 2%;
+  border-radius: var(--rounded-borders);
+  transition: var(--transition);
+}
+
+.dateContainer {
+  padding: 1% 4%;
+  background-color: rgb(216, 216, 236);
+  color: var(--primary-dark);
+  border-radius: var(--rounded-borders);
+  transition: var(--transition);
+  margin: 2.5%;
+}
+.fileNameLabel {
+  padding: 1% 0 1% 8%;
+  transition: var(--transition);
+  background-color: var(--primary-light);
+  border-radius: var(--rounded-borders);
+  margin: 1%;
+  margin-bottom: 2.5%;
+}
+.treeButtons,
+.treeButtonsforDate {
+  margin-right: 2%;
+  font-size: 1.25em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.treeButtons:hover {
+  background-color: rgb(216, 216, 236);
+  color: var(--primary-dark);
+}
+.treeButtonsforDate:hover {
+  color: rgb(216, 216, 236);
+  background-color: var(--primary-dark);
+}
+/* .collapsed {
+  height: 0;
+  opacity: 0;
+  transition: var(--transition);
+}
+.expanded {
+  opacity: 1;
+  height: auto;
+  margin-top: 2%;
+  display: block;
+} */

@@ -1,0 +1,4 @@
+tech-support/
+__pycache__/
+.env
+logs/

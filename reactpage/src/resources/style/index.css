@@ -1,0 +1,146 @@
+:root {
+  --left: 22.5%;
+  --width: 48%;
+  --transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s;
+  --transition-main: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s;
+  --rounded-borders: 15px;
+  --primary-dark: rgba(2, 0, 36, 1);
+  --primary-light: rgba(0, 202, 249, 1);
+  --bg-bg: linear-gradient(var(--primary-light), var(--primary-dark));
+  --secondary-dark: rgb(30, 30, 62, 1);
+  --secondary-light: antiquewhite;
+  --input-bg-light: #897869;
+  --input-bg-dark: #000;
+  --fadein-opacity: 0;
+  --fadein-blur: blur(10px);
+  --fade: 0.85;
+  --box-shadow-output: rgba(0, 0, 0, 0.3) 0px 19px 38px;
+  --box-shadow-input: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+[data-theme="deep-sea"] {
+  --transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s;
+  --transition-main: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s;
+  --rounded-borders: 15px;
+  --primary-dark: rgba(2, 0, 36, 1);
+  --primary-light: rgba(0, 202, 249, 1);
+  --bg-bg: linear-gradient(var(--primary-light), var(--primary-dark));
+  --secondary-dark: rgb(30, 30, 62, 1);
+  --secondary-light: antiquewhite;
+  --input-bg-light: #897869;
+  --input-bg-dark: #000;
+  --fadein-opacity: 0;
+  --fadein-blur: blur(10px);
+  --fade: 0.85;
+  --box-shadow-output: rgba(0, 0, 0, 0.3) 0px 19px 38px;
+  --box-shadow-input: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+[data-theme="terminal"] {
+  --transition: none;
+  --transition-main: none;
+  --primary-dark: #000;
+  --primary-light: #000;
+  --bg-bg: linear-gradient(var(--primary-dark), var(--primary-dark));
+  --secondary-dark: #000;
+  --secondary-light: #000;
+  --input-bg-light: #fff;
+  --input-bg-dark: #000;
+  --fadein-opacity: 1;
+  --fadein-blur: blur(0px);
+  --fade: 1;
+  --box-shadow-output: none;
+  --box-shadow-input: none;
+  --rounded-borders: 0px;
+  --border-light: 1px dashed white;
+  --color-light: #fff;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: var(--bg-bg);
+  color: white;
+  font-family: monospace;
+  overflow: hidden;
+}
+.logo {
+  position: fixed;
+  width: 7.5%;
+  right: 5px;
+  top: 5px;
+  /* display: flex; */
+  padding: 0;
+  color: var(--primary-dark);
+  background-color: white;
+  border-radius: 10px;
+  opacity: 0.3;
+}
+.logo img {
+  width: 100%;
+  margin: auto;
+}
+.logo p {
+  font-size: 1em;
+  margin: auto;
+  text-align: center;
+}
+.menuSwitch {
+  position: absolute;
+  color: var(--primary-dark);
+  left: calc(100% - 40px);
+  top: 3%;
+  font-size: 1.25em;
+  z-index: 7;
+  transition: var(--transition);
+}
+.menuSwitch:active {
+  transform: scale(0.8);
+}
+#historyButtonForFileSwitcher {
+  left: calc(100% - 70px);
+}
+
+.indicator {
+  position: absolute;
+}
+
+.caseSearchButton,
+.settingsButton {
+  position: absolute;
+  opacity: 1;
+  font-size: 2em;
+  left: 7.5%;
+  bottom: 8%;
+  z-index: 5;
+  cursor: pointer;
+}
+.caseSearchButton:active,
+.settingsButton:active {
+  transform: scale(0.75);
+}
+.settingsButton {
+  bottom: 3%;
+}
+
+/* For Webkit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Adjust the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Make the track transparent */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5); /* Style the scrollbar thumb */
+  border-radius: 6px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.5) transparent; /* Thumb color | Track color */
+}

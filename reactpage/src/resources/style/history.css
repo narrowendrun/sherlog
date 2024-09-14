@@ -1,0 +1,139 @@
+.commandHistoryWrapperHover {
+  position: absolute;
+  width: 30%;
+  top: 25.5%;
+  left: -29%;
+  height: 58%;
+  transition: var(--transition);
+  z-index: 6;
+  opacity: 0.5;
+  overflow: hidden;
+}
+.commandHistoryWrapperHover:hover {
+  left: -6% !important;
+  opacity: 1 !important;
+}
+.commandHistoryWrapper {
+  position: absolute;
+  height: 100%;
+  width: 73%;
+  z-index: 5;
+  margin-left: 27%;
+  background-color: rgb(216, 216, 236);
+  border-radius: var(--rounded-borders);
+  border: 1px black dashed;
+}
+.commandHistory {
+  position: absolute;
+  color: var(--primary-dark);
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  left: 10px;
+  top: 10px;
+  font-size: 0.75em;
+  padding: 2%;
+  border-radius: var(--rounded-borders);
+  border: 1px black dashed;
+  overflow: scroll;
+  overflow-x: hidden;
+  z-index: 5;
+  transition: var(--transition);
+}
+.pinButton {
+  color: var(--primary-dark);
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  font-size: 1.5vw;
+  transition: var(--transition);
+  background-color: rgb(216, 216, 236);
+  border-radius: 50%;
+  z-index: 6;
+}
+.commandHistoryLineItemWrapper {
+  position: absolute;
+  overflow: scroll;
+  width: 100%;
+  height: 80%;
+}
+.commandHistoryLineItem {
+  position: relative;
+  transition: var(--transition);
+  border-radius: var(--rounded-borders);
+  padding: 0;
+  width: 85%;
+  left: 2.5%;
+  border: 1px dashed var(--primary-dark);
+  margin-top: 3%;
+}
+.commandHistoryLineItem:hover {
+  z-index: 7;
+  box-shadow: var(--box-shadow-output);
+}
+.commandHistoryLineItem p {
+  margin-left: 5%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  margin-right: 5%;
+  cursor: pointer;
+}
+.deleteHistoryItem {
+  position: absolute;
+  font-size: 1.5em;
+  right: -25px;
+  top: 7.5px;
+  background-color: rgb(216, 216, 236);
+  z-index: 7;
+}
+.deleteHistoryItem:active {
+  transform: scale(0.75);
+}
+.deleteHistoryItem:hover .commandHistoryLineItem {
+  box-shadow: none;
+}
+#historyLength {
+  position: absolute;
+  border-top: 1px dashed black;
+  padding-top: 2%;
+  bottom: 0;
+  width: 100%;
+}
+.historyTitle {
+  position: absolute;
+  top: 1.5%;
+  width: 80%;
+  left: 10%;
+  padding-bottom: 2%;
+  background-color: rgb(216, 216, 236);
+  border: none;
+  border-bottom: 1px dashed black;
+  text-align: center;
+}
+.historyTitle:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px dashed black;
+  box-shadow: none;
+}
+
+.historySearch {
+  position: absolute;
+  right: 15%;
+  font-size: 1.5em;
+}
+
+.historySearch:active {
+  transform: scale(0.75);
+}
+.selectCommands {
+  position: absolute;
+  color: blue;
+  bottom: 0;
+  left: 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.selectCommands:active {
+  transform: scale(0.8);
+}
