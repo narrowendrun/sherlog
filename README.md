@@ -2,6 +2,8 @@
 
 An innovative web application designed to emulate a switch CLI for streamlined interaction with tech-support files. It allows users to effortlessly upload and run switch commands with advanced features such as tab autocompletion, command prompts using ‘?’, Linux-style piping and ‘intuitive search’.
 
+A modified version of sherlog is present at Arista Networks as an internal tool that has the added functionality of pulling files from a central repository.
+
 ## Features
 
 - upload your tech-support file(s) (.gz and .log)
